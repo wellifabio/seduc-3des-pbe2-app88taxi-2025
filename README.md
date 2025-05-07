@@ -7,3 +7,5 @@ Exemplo de projeto de uma API de taxi utilizando o framework Node.js e o banco d
 - Insomnia
 ## Estrutura do Projeto
 ![dc](./docs/dc.png)
+
+## Passo a passo para executar o projeto
