@@ -1,0 +1,538 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1741697361940
+  modified: 1741697361940
+collection:
+  - name: PetShop
+    meta:
+      id: fld_6b87a1251262419eaa257128ef8eab64
+      created: 1742910480758
+      modified: 1742924649712
+      sortKey: -1742910480758
+    children:
+      - name: Cliente
+        meta:
+          id: fld_abc053829e1c4cc8875c13828e3546e8
+          created: 1742910532853
+          modified: 1742931421253
+          sortKey: -1742910532853
+      - name: Telefone
+        meta:
+          id: fld_a17cbcc1e23b450fb0597eca1f0392cf
+          created: 1742921595646
+          modified: 1742922954290
+          sortKey: -1742910526341.125
+      - name: Pedido
+        meta:
+          id: fld_1653b6d49c84483fbcabf6766f752c7a
+          created: 1742922450835
+          modified: 1742922450835
+          sortKey: -1742910519829.25
+  - name: Escola
+    meta:
+      id: fld_29e30b91b2024e26a01879628bcb742f
+      created: 1744220477468
+      modified: 1744223821176
+      sortKey: -1744220477468
+    children:
+      - name: Aluno
+        meta:
+          id: fld_b08a1057c5c44d438a2d4c94d51632b4
+          created: 1744220485851
+          modified: 1744220485851
+          sortKey: -1744220485851
+      - name: Professor
+        meta:
+          id: fld_c4a13ae2cf0e4117853006e32880b6ef
+          created: 1744221828381
+          modified: 1744221828381
+          sortKey: -1744220481659.5
+      - name: Turma
+        meta:
+          id: fld_a5532be6293a4df798d21635e8d88546
+          created: 1744221944941
+          modified: 1744221944941
+          sortKey: -1744220479563.75
+      - name: Disciplina
+        meta:
+          id: fld_dbd5c7c4766e4a22a8c5fcd1857c7276
+          created: 1744222060691
+          modified: 1744222060691
+          sortKey: -1744220478515.875
+      - name: Matricula
+        meta:
+          id: fld_f79f01bd979c4a2090775daa50e7184e
+          created: 1744222178387
+          modified: 1744222178387
+          sortKey: -1744220477991.9375
+  - name: Pizzaria
+    meta:
+      id: fld_49fe1e0b9e5540e5952d069e07b9de94
+      created: 1744715501812
+      modified: 1744715501812
+      sortKey: -1744715501812
+    children:
+      - name: Cliente
+        meta:
+          id: fld_93d3599a6ed54d48a74372be22e01a32
+          created: 1744715570280
+          modified: 1744715570280
+          sortKey: -1744715570280
+      - name: Pizza
+        meta:
+          id: fld_b8e47f6777f94dc189cfa1eadaacc3df
+          created: 1744716136403
+          modified: 1744716136403
+          sortKey: -1744715536046
+      - name: Pedido
+        meta:
+          id: fld_ed2688159afb4e068bb397c345a68541
+          created: 1744716606589
+          modified: 1744720076556
+          sortKey: -1744715518929
+      - name: Item
+        meta:
+          id: fld_a85acf383f594a759b14139d585b6d22
+          created: 1744716802255
+          modified: 1744716802255
+          sortKey: -1744715510370.5
+  - name: Pedidos Patterns
+    meta:
+      id: fld_51ef0a00607d474cae4dd461d0e8bae7
+      created: 1745930542373
+      modified: 1745934793651
+      sortKey: -1745930542373
+    children:
+      - name: Pedido
+        meta:
+          id: fld_6e6270eec37e4766a49d9805e2b8ca8a
+          created: 1745934803564
+          modified: 1745934803564
+          sortKey: -1745934803564
+      - name: Item
+        meta:
+          id: fld_93a94d44984b47a5bd1f41438640a9f5
+          created: 1745935751110
+          modified: 1745935751110
+          sortKey: -1745932672968.5
+  - name: app88taxi
+    meta:
+      id: fld_1994f56b63ab4f0eb1e4df57bb2d960c
+      created: 1746622072098
+      modified: 1746622090314
+      sortKey: -1746622072098
+    children:
+      - name: Passageiros
+        meta:
+          id: fld_86ee3d98c7f240af969b7efc2660677e
+          created: 1746622083520
+          modified: 1746622083520
+          sortKey: -1746622083520
+        children:
+          - url: http://localhost:4000/passageiros
+            name: READ
+            meta:
+              id: req_7b983334d5c049c59d2050f7dd0e81b2
+              created: 1746622231211
+              modified: 1746622248572
+              isPrivate: false
+              sortKey: -1746622231211
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:4000/passageiros
+            name: CREATE
+            meta:
+              id: req_d2a088d8012f458889734801444e472a
+              created: 1746622288759
+              modified: 1746622731348
+              isPrivate: false
+              sortKey: -1746622161385
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome":"Xuxa Silva",
+                	"cpf":"11122233388",
+                	"email":"xuxa@email.com",
+                	"senha":"1234"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:4000/passageiros/12
+            name: DELETE
+            meta:
+              id: req_7f9443651d604a0f9ae97ebd45252eaa
+              created: 1746622746989
+              modified: 1746622980833
+              isPrivate: false
+              sortKey: -1746622126472
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:4000/passageiros/12
+            name: UPDATE
+            meta:
+              id: req_77bc257875ea4c3687e27677b13f1834
+              created: 1746622813094
+              modified: 1746622849510
+              isPrivate: false
+              sortKey: -1746622143928.5
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome":"Xuxinha Silva"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:4000/passageiros/1
+            name: READONE
+            meta:
+              id: req_832918d66fb342e6a1506ca2d16405b5
+              created: 1746623679133
+              modified: 1746623682351
+              isPrivate: false
+              sortKey: -1746622196298
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Motoristas
+        meta:
+          id: fld_bf071b87ba3b47c99de0010394e9ec7e
+          created: 1746623338555
+          modified: 1746623751604
+          sortKey: -1746622077809
+        children:
+          - url: http://localhost:4000/motoristas
+            name: READ
+            meta:
+              id: req_f7a328d284344e0aacec727970b645ee
+              created: 1746623338558
+              modified: 1746623346894
+              isPrivate: false
+              sortKey: -1746622231211
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:4000/motoristas
+            name: CREATE
+            meta:
+              id: req_c38f940c4cda4eadadd41630b5fd1be3
+              created: 1746623338560
+              modified: 1746623495887
+              isPrivate: false
+              sortKey: -1746622161385
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome":"Passos Dias Aguiar",
+                	"cnh":"11111111133",
+                	"email":"passos@email.com",
+                	"senha":"4321"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:4000/motoristas/5
+            name: DELETE
+            meta:
+              id: req_51fcb82065e64d56830c4a40d2eca35f
+              created: 1746623338561
+              modified: 1746623736303
+              isPrivate: false
+              sortKey: -1746622126472
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:4000/motoristas/3
+            name: UPDATE
+            meta:
+              id: req_506e037520664e9c924cbf4189176ad0
+              created: 1746623338564
+              modified: 1746623656788
+              isPrivate: false
+              sortKey: -1746622143928.5
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome":"Marcos Silva",
+                	"email":"marcos@email.com"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:4000/motoristas/1
+            name: READONE
+            meta:
+              id: req_159a718bf2714c0981192c4634e38891
+              created: 1746623698298
+              modified: 1746623701031
+              isPrivate: false
+              sortKey: -1746622213754.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Viagens
+        meta:
+          id: fld_7dc327ab365e4888938397b24c27c05e
+          created: 1746623719245
+          modified: 1746623719245
+          sortKey: -1746622074953.5
+        children:
+          - url: http://localhost:4000/viagens
+            name: READ
+            meta:
+              id: req_9d138a50cfa84824b6f2f99e13279a02
+              created: 1746623719247
+              modified: 1746623726028
+              isPrivate: false
+              sortKey: -1746622231211
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:4000/viagens
+            name: CREATE
+            meta:
+              id: req_11c68fa1c9de46778d92cc6750115382
+              created: 1746623719249
+              modified: 1746624326767
+              isPrivate: false
+              sortKey: -1746622161385
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"passageiroId":1,
+                	"origem":"SENAI",
+                	"destino":"Igreja"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:4000/viagens/11
+            name: DELETE
+            meta:
+              id: req_f28991a740b84dcca870429401d92ae6
+              created: 1746623719252
+              modified: 1746624386738
+              isPrivate: false
+              sortKey: -1746622126472
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:4000/viagens/9
+            name: UPDATE
+            meta:
+              id: req_2d9c82f514a24f7e94f1ad7a4d00a6dc
+              created: 1746623719253
+              modified: 1746624373228
+              isPrivate: false
+              sortKey: -1746622143928.5
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"motoristaId":4,
+                	"dataFim":"2025-05-07T10:00:00.000Z"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:4000/viagens/1
+            name: READONE
+            meta:
+              id: req_2aa0ac60e8ec4db49fb43396e2caece7
+              created: 1746623719255
+              modified: 1746623776628
+              isPrivate: false
+              sortKey: -1746622213754.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - url: http://localhost:4000
+        name: Titulo-Teste
+        meta:
+          id: req_f2d5630e67c74492b0bee146f4ca0ce9
+          created: 1746622091558
+          modified: 1746622187416
+          isPrivate: false
+          sortKey: -1746622091559
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1741785010824
+    modified: 1741785010824
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1741785010734
+    modified: 1741785010734
+    isPrivate: false
