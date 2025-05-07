@@ -6,7 +6,7 @@ Exemplo de projeto de uma API de taxi utilizando o framework Node.js e o banco d
 - MySQL (XAMPP)
 - Insomnia
 ## Estrutura do Projeto
-- ![Diagrama de Classes](./docs/dc.png)
+![Diagrama de Classes](./docs/dc.png)
 
 ## Passo a passo para executar o projeto
 - 1 Clone o repositório
